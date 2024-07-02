@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+        body {
+            display: grid;
+            margin: 0;
+            place-content: center;
+        }
+
+        input,
+        label {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        input {
+            margin-left: 5px;
+        }
+
+        .overall {
+            width: fit-content;
+            padding: 50px;
+            border: 2px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            padding: 5px;
+        }
+    </STYLE>
+</head>
+
+<body>
+    <div class="overall">
+        <form onsubmit="handleRegister(event)">
+            <div>
+                <td> <label for="uname">Username</label> </td>
+                <td> <input type="text" name="" id="uname" value=""></td>
+            </div>
+            <div>
+                <td> <label for="pass">Password</label> </td>
+                <td><input type="password" name="" id="pass"> </td>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
